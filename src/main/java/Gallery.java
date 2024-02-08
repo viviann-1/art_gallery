@@ -27,4 +27,8 @@ public class Gallery {
     public void addArtwork(Artwork art) {
         this.stock.add(art);
     }
+
+    public void removeArtwork(Artwork art){
+        this.stock.remove(art);
+    }
 }

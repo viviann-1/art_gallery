@@ -36,4 +36,14 @@ public class GalleryTest {
         assertThat(gallery.artworkCount()).isEqualTo(1);
     }
 
+    @Test
+    public void canRemoveArtworkFromGallery() {
+        gallery.addArtwork(art1);
+        gallery.addArtwork(art2);
+        gallery.addArtwork(art3);
+        gallery.removeArtwork(art3);
+        assertThat(gallery.artworkCount()).isEqualTo(2);
+    }
+
+
 }
