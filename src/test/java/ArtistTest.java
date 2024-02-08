@@ -17,4 +17,5 @@ public class ArtistTest {
         assertThat(artist.getName()).isEqualTo("Picasso");
     }
 
+
 }

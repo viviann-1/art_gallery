@@ -9,18 +9,10 @@ public class Customer {
     }
 
     public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+        return this.name;
     }
 
     public double getWallet() {
-        return wallet;
-    }
-
-    public void setWallet(double wallet) {
-        this.wallet = wallet;
+        return this.wallet;
     }
 }
