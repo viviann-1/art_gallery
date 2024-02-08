@@ -45,5 +45,4 @@ public class GalleryTest {
         assertThat(gallery.artworkCount()).isEqualTo(2);
     }
 
-
 }
