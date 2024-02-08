@@ -12,5 +12,27 @@ public class Gallery {
         this.stock =inputStock;
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getTill() {
+        return till;
+    }
+
+    public void setTill(double till) {
+        this.till = till;
+    }
+
+    public ArrayList<Artwork> getStock() {
+        return stock;
+    }
+
+    public void setStock(ArrayList<Artwork> stock) {
+        this.stock = stock;
+    }
 }
