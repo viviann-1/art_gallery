@@ -6,33 +6,25 @@ public class Gallery {
     private double till;
     private ArrayList<Artwork> stock;
 
-    public Gallery(String inputName, double inputTill, ArrayList<Artwork> inputStock){
+    public Gallery(String inputName){
         this.name =inputName;
-        this.till =inputTill;
-        this.stock =inputStock;
+        this.till = 0.0;
+        this.stock = new ArrayList<>();
     }
 
     public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+        return this.name;
     }
 
     public double getTill() {
-        return till;
+        return this.till;
     }
 
-    public void setTill(double till) {
-        this.till = till;
+    public int artworkCount() {
+        return this.stock.size();
     }
 
-    public ArrayList<Artwork> getStock() {
-        return stock;
-    }
-
-    public void setStock(ArrayList<Artwork> stock) {
-        this.stock = stock;
+    public void addArtwork(Artwork art) {
+        this.stock.add(art);
     }
 }
