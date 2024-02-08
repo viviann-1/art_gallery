@@ -21,7 +21,12 @@ public class GalleryTest {
     }
 
     @Test
-    public void gallaryHasName() {
+    public void galleryHasName() {
         assertThat(gallery.getName()).isEqualTo("Best Gallery Ever");
+    }
+
+    @Test
+    public void galleryHasTill() {
+        assertThat(gallery.getTill()).isEqualTo(0.0);
     }
 }
