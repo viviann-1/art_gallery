@@ -29,4 +29,11 @@ public class GalleryTest {
     public void galleryHasTill() {
         assertThat(gallery.getTill()).isEqualTo(0.0);
     }
+
+    @Test
+    public void canAddArtworkToGallery(){
+        gallery.addArtwork(art1);
+        assertThat(gallery.artworkCount()).isEqualTo(1);
+    }
+
 }
