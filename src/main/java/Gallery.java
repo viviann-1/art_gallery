@@ -31,4 +31,9 @@ public class Gallery {
     public void removeArtwork(Artwork art){
         this.stock.remove(art);
     }
+
+    public void buyArtwork(Artwork art) {
+        this.removeArtwork(art);
+        this.till += art.getPrice();
+    }
 }

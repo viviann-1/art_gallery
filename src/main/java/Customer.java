@@ -15,4 +15,11 @@ public class Customer {
     public double getWallet() {
         return this.wallet;
     }
+
+    public void buyArtworkFromGallery(Artwork art, Gallery gallery) {
+        if (this.wallet - art.getPrice() >= 0) {
+            this.wallet -= art.getPrice();
+            gallery.buyArtwork(art);
+        }
+    }
 }

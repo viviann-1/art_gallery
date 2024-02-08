@@ -45,4 +45,16 @@ public class GalleryTest {
         assertThat(gallery.artworkCount()).isEqualTo(2);
     }
 
+    @Test
+    public void canBuyArtwork() {
+        // ACT
+        gallery.addArtwork(art1);
+        gallery.addArtwork(art2);
+        gallery.addArtwork(art3);
+        gallery.buyArtwork(art1);
+        // ASSERT
+        assertThat(gallery.artworkCount()).isEqualTo(2);
+        assertThat(gallery.getTill()).isEqualTo(100);
+    }
+
 }
